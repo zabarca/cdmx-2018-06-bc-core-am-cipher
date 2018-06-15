@@ -5,8 +5,64 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root"></div>
+    <style media="screen">
+      body{
+        background-image: url("imagenes/hearts-on-a-string.jpg");
+      }
+
+    </style>
+
+    <h1 style="color:black;">Caesar Cipher</h1>
+    <hr>
+    <h2 style="color:#e60000;"> De aquí podras sacar mensaje cifrado para tu enamorado</h2>
+    <p> Si quieres decirle algo a tú crush sin que se vea tan lanzado o pasar el chisme sin que nadie más se entere...
+      dales una nota cifrada! Y que ellos se descubran el significado. </p>
+    <p>Sigue los pasos a continuación: </p>
+    <!-- <hr> -->
+
+    <!--seccion en donde ingresaremos la palabra a cifrar-->
+
+      <div>
+      Ingresa tú número clave para el cifrado o descifrado
+      <input type="text"
+      id="pos"
+      placeholder="Escribe aquí">
+      </div>
+
+      <div>
+        Escribe el texto y presiona la acción que quieras realizar!!
+        <input type="text" id="frase" placeholder="Escribe aquí">
+        <input type="button" id="llamar" value="Cifrar">
+        <input type="button" id="llamar1" value="Decifrar">
+        </div>
+
+
+    <div id="resultado">Atento!!!! Aquí veras tu mensaje</div>
+    <!-- <div class="lectura";><p>
+      Pero de donde viene esta idea???
+
+      El cifrado César es uno de los primeros métodos de cifrado conocidos
+      históricamente. Es un tipo de cifrado por sustitución en el que una letra
+      en el texto original es reemplazada por otra letra que se encuentra
+      un número fijo de posiciones más adelante en el alfabeto.
+
+      El emperador Julio César lo usaba para enviar órdenes a sus generales en los
+      campos de batalla, es una de las técnicas más simples y más usadas para cifrar
+      un mensaje.
+
+      Por ejemplo si usáramos un desplazamiento de 3:
+
+      * Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+      * Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+
+    </p></div> -->
+
+
+
+<!-- <div id="root"></div> -->
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
