@@ -1,9 +1,9 @@
 window.cipher = {
-  
+
     encode: (offset, string) => {
     let result = "";
-    let stringCapturado = string.toUpperCase();
-    let offsetCapturado = parseInt(offset);
+    let stringCapturado = string.toUpperCase(); //pasando string a mayusculas
+    let offsetCapturado = parseInt(offset);//pasando el numero de espacioas a recorrer a type number
     for (let i = 0; (i<stringCapturado.length); i++) { //palabra de 0 hasta su largo
       let c = stringCapturado.charCodeAt(i); //palabra convertida a ascii
       console.log(c);

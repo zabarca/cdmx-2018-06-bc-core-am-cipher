@@ -1,8 +1,8 @@
 document.getElementById("llamar").addEventListener("click",function(){
-  let position = document.getElementById("pos").value;
-  let palabra = document.getElementById("frase").value;
+  let offset = document.getElementById("pos").value;
+  let string = document.getElementById("frase").value;
 
-  let resultado = cipher.encode(position,palabra);
+  let resultado = cipher.encode(offset,string);
 
   document.getElementById("resultado").innerHTML = resultado;
 })
